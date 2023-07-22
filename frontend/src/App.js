@@ -37,7 +37,8 @@ import ProcessOrder from "./components/Admin/ProcessOrder.js";
 import AllUsers from "./components/Admin/AllUsers.js";
 import AdminUsersEdit from "./components/Admin/AdminUserEdit.js";
 import AdminReviews from "./components/Admin/AdminReviews.js";
-import About from "./components/About/About.js"
+import About from "./components/About/About.js";
+import NoPageElement from "./components/Home/NoPageElement.js";
 import axios from 'axios';
 
 
@@ -272,6 +273,10 @@ useEffect(()=>{
           />
           <Route
             exact path='/about' element={<About/>}
+          />
+          <Route
+            path="*"
+            element={<NoPageElement/>}
           />
          
 

@@ -1,0 +1,24 @@
+.noPage{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.noPage >div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.noPage > div >svg{
+    height:5vmax;
+    width: 50vmax;
+    color: tomato;
+}
+
+.noPage >div>p{
+    margin-top: 1vmax;
+    font:400 2vmax "Roboto";
+}

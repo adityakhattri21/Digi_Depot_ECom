@@ -6,6 +6,7 @@ const cors = require('cors');
 const bodyParser = require("body-parser");
 const fileupload = require('express-fileupload');
 const dotenv=require("dotenv");
+const path = require("path");
 
 //config
 dotenv.config({path:"config/config.env"});
@@ -18,6 +19,7 @@ app.use(cors({
 }));
  app.use(fileupload());
  app.use(bodyParser.urlencoded({ extended: true }));
+ app.use(express.static(path.join(__dirname,"../frontend/build")));
 
 //route imports
 const products = require("./routes/productRoute");
@@ -32,6 +34,10 @@ app.use("/api/v1",payment);
 
 app.get("/",(req,res)=>{
     res.status(200).json({message:"hello"})
+})
+
+app.get("*",(req,res)=>{
+    res.sendFile(path.resolve(__dirname,"../frontend/build/index.html"));
 })
 
 //Middleware for Error Handling
