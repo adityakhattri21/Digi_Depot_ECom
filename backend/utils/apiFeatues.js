@@ -13,23 +13,17 @@ class ApiFeatures{
                 $options:'i' //means search is now case in-sensitive . Both of these are a part of MongoDB
             },
         } : {}
-
         this.query = this.query.find({...keyword});
         return this; //we have returned this class here.
     }
 
     filter(){
-        ;
         const queryCopy = {...this.queryString};
-
         //removing some fields from the query
         const removeFields = ["keyword","page","limit"]
-
         removeFields.forEach(key=> delete queryCopy[key]);
-
         //converting queryString into string to give it a feature of less than and greater than.
         let queryStr = JSON.stringify(queryCopy);
-
         queryStr = queryStr.replace(/\b(gt|gte|lt|lte)\b/g , (replace)=>`$${replace}`) //since mongoDB uses
         // $gt,$gte,$lt,$lte to search the database.
         this.query = this.query.find(JSON.parse(queryStr));

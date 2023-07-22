@@ -17,7 +17,7 @@ import MetaData from '../layout/MetaData';
 const categories = [
   "Laptop",
   "Footwear",
-  "Bottoms",
+  "Bottom",
   "Tops",
   "Attire",
   "Camera",
@@ -27,8 +27,8 @@ const categories = [
 const Products = () => {
 
     const [currentPage , setCurrentPage] = useState(1);
-    const [price,setPrice] = useState([0,25000]);
-    const [tprice , setTPrice] = useState([0,25000])
+    const [price,setPrice] = useState([0,2500000]);
+    const [tprice , setTPrice] = useState([0,2500000])
     const [showTooltip, setShowTooltip] = useState(false)
     const  [category,setCategory] = useState("");
     const [ratings , setRatings ] = useState(0);
@@ -94,7 +94,7 @@ const Products = () => {
         <div className='filterBox'>
             <Heading size='sm'>Price</Heading>
             <RangeSlider defaultValue={price}
-           aria-label="price-filter" min={1000} max={25000}  onChangeEnd={(newPrice)=>priceHandler(newPrice)} onChange={(newPrice)=>tpriceHandler(newPrice)}
+           aria-label="price-filter" min={1000} max={150000}  onChangeEnd={(newPrice)=>priceHandler(newPrice)} onChange={(newPrice)=>tpriceHandler(newPrice)}
            onMouseEnter={() => setShowTooltip(true)}
           onMouseLeave={() => setShowTooltip(false)}
           >

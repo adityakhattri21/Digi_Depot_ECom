@@ -29,7 +29,7 @@ import {ALL_PRODUCT_FAIL ,
 } from "../constants/productConstants";
 import { UPDATE_PASSWORD_FAIL } from "../constants/userConstants";
 
-export const getProducts = (keyword="",currentPage=1,price=[0,25000],category,ratings=0) => async(dispatch) =>{
+export const getProducts = (keyword="",currentPage=1,price=[0,2500000],category,ratings=0) => async(dispatch) =>{
 try {
     dispatch({type:ALL_PRODUCT_REQUEST});
     let link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
@@ -39,7 +39,7 @@ try {
     }
 
     const {data} = await axios.get(link);
-
+    console.log(category)
     dispatch({
         type:ALL_PRODUCT_SUCCESS,
         payload:data

@@ -112,7 +112,7 @@ const Dashboard = () => {
         <div className='dashboardSummary'>
         <div>
           <p>
-            Total Amount : <br/>{`₹ ${totalAmount}`}
+            Total Amount : <br/>{`₹ ${Math.floor(totalAmount)}`}
           </p>
         </div>
         </div>
