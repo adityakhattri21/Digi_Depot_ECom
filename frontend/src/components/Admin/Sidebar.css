@@ -1,0 +1,113 @@
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 2vmax;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+.options > a{
+    margin:2vmax 1vmax 2vmax 1vmax;
+}
+
+
+
+.options > a > p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: 400 1.5vmax 'Roboto';
+    color:gray;
+    transition: all 0.5s;
+}
+
+.options > a>p:hover{
+    color: tomato;
+    transform: scale(1.1)
+}
+
+
+
+ul{
+    list-style:none;
+}
+
+.tree-node {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font: 400 1.5vmax 'Roboto';
+    color:gray;
+    transition: all 0.5s;
+    margin:2vmax 1vmax 2vmax 1vmax;
+}
+
+.tree-node:hover{
+    color: tomato;
+    transform: scale(1.1);
+}
+
+.icon{
+    display: block;
+    margin-right: 0.5vmax;
+}
+
+.arrow-closed{
+    display: block;
+    margin-right: 0.5vmax;
+    transition: all 0.3s;
+}
+
+.arrow-open{
+    transform: rotate(90deg);
+  transition: all 0.3s;
+  margin-right: 0.5vmax;
+}
+
+.logo{
+    cursor: pointer;
+    padding-top:5vmax ;
+    transition: all 0.5s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.treeLink{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5vmax 0;
+    font: 300 1.3vmax 'Roboto';
+}
+@media screen and (max-width:600px) {
+    .sidebar{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .options{
+        flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 0;
+    height: 20vh;
+    padding: 0 7vmax;
+        
+    }
+    .options > a > p{
+        font:300 2vmax "Roboto";
+    }
+
+    .logo{
+        height: 100%;
+    }
+
+    .tree-node{
+        font:300 2vmax "Roboto";
+
+    }
+}
+

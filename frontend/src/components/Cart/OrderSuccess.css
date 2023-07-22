@@ -1,0 +1,55 @@
+.orderSuccess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.tick{
+    height: 10vmax;
+    width: 10vmax;
+    margin-bottom: 1vmax;
+    color: green;
+}
+
+.orderHeading{
+    font: 500 5vmax 'Roboto';
+    color: green;
+}
+
+.orderSuccess > button {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 0.8vmax 4vmax;
+    width: 20%;
+    font:300 1vmax "Roboto";
+    margin: 1vmax 4vmax;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.5s;
+  }
+  
+  .orderSuccess > button:hover{
+    background-color: rgb(142, 62, 48);
+  }
+
+  @media screen and (max-width:600px) {
+
+    .tick{
+        height: 8vmax;
+        width: 8vmax;
+    }
+    
+    .orderHeading{
+        font: 500 3vmax 'Roboto';
+        color: green;
+    }
+
+    .orderSuccess > button {
+        width: 50%;
+        font:300 2vmax "Roboto";
+      }
+    
+  }

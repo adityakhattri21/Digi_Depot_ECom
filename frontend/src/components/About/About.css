@@ -1,0 +1,122 @@
+.firstDiv{
+    margin: 3vmax;
+    padding: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(
+  55deg,
+  hsl(18deg 50% 96%) 0%,
+  hsl(19deg 55% 96%) 7%,
+  hsl(20deg 60% 96%) 14%,
+  hsl(20deg 65% 97%) 21%,
+  hsl(21deg 71% 97%) 27%,
+  hsl(22deg 78% 97%) 34%,
+  hsl(22deg 86% 97%) 41%,
+  hsl(23deg 95% 97%) 47%,
+  hsl(23deg 100% 98%) 54%,
+  hsl(23deg 100% 98%) 60%,
+  hsl(23deg 100% 98%) 67%,
+  hsl(23deg 100% 99%) 73%,
+  hsl(23deg 100% 99%) 80%,
+  hsl(23deg 100% 99%) 87%,
+  hsl(23deg 100% 100%) 93%,
+  hsl(0deg 0% 100%) 100%
+);
+}
+
+.content{
+    padding-left: 2vmax;
+    width: 50%;
+}
+
+.content > h1{
+    font:100 3vmax cursive;
+    color:#FFC26F;
+    margin-bottom: 1vmax;
+}
+
+.content > p{
+    font:100 1.5vmax 'Roboto';
+    color: #65647C;
+}
+
+.secondDiv{
+    margin: 3vmax;
+    padding: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutCarousel{
+    width: 50%;
+    padding-left: 10vmax;
+}
+
+
+.secondDiv > div:first-child>ul{
+    margin-top: 1vmax;
+    padding-left: 2vmax;
+    list-style-type: circle;
+}
+
+.secondDiv >div:first-child>ul>li{
+    font: 100 1.5vmax 'Roboto';
+    margin: 1vmax 0 1vmax 0;
+}
+
+.thirdDiv{
+    margin: 3vmax;
+    padding: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(
+  55deg,
+  hsl(18deg 50% 96%) 0%,
+  hsl(19deg 55% 96%) 7%,
+  hsl(20deg 60% 96%) 14%,
+  hsl(20deg 65% 97%) 21%,
+  hsl(21deg 71% 97%) 27%,
+  hsl(22deg 78% 97%) 34%,
+  hsl(22deg 86% 97%) 41%,
+  hsl(23deg 95% 97%) 47%,
+  hsl(23deg 100% 98%) 54%,
+  hsl(23deg 100% 98%) 60%,
+  hsl(23deg 100% 98%) 67%,
+  hsl(23deg 100% 99%) 73%,
+  hsl(23deg 100% 99%) 80%,
+  hsl(23deg 100% 99%) 87%,
+  hsl(23deg 100% 100%) 93%,
+  hsl(0deg 0% 100%) 100%
+);
+}
+
+.thirdDiv>div:last-child{
+    width: 50%;
+    mix-blend-mode: multiply;
+}
+
+@media screen and (max-width:600px){
+    .firstDiv{
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .secondDiv{
+        flex-direction: column-reverse;
+    }
+
+    .aboutCarousel{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .thirdDiv{
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,82 @@
+.productsList{
+    border-left: 1px solid rgba(0, 0, 0, 0.13);
+    /* background-color: rgb(255, 255, 255); */
+    padding: 3rem 1rem;
+    margin-left: 2vmax;
+    height: 100vh;
+}
+
+.productsList > h1{
+    font:400 3vmax 'Roboto';
+    color:rgba(35, 33, 33,0.5);
+    padding: 1.5rem;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.productActions{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.productActions > a > svg{
+    margin: 0 0.5vmax;
+    transition: all 0.5s;
+}
+
+.productActions > a > svg:hover{
+    color: tomato;
+}
+
+.noProducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.noProducts > svg{
+    height: 8vmax;
+    width: 8vmax;
+    margin-bottom: 1vmax;
+    color: tomato;
+}
+
+.noProducts > p{
+    font: 300 4vmax 'Roboto';
+    color: gray;
+}
+
+@media screen and (max-width:600px) {
+    .productsList{
+        border-top: 1px solid rgba(0, 0, 0, 0.13);
+        margin: 0;
+        padding: 0;
+    }
+
+    .productsList > .table{
+        height: 50vh;
+        width: 99vw;
+    }
+
+    .productsList > .table >table{
+        height: 100%;
+    }
+
+    .productsList > .table >table>thead>tr>th{
+        font:300 1.7vmax 'Roboto';
+    }
+
+    .productsList > .table >table>tbody>tr>td{
+        font: 300 1.5vmax 'Roboto';
+    }
+
+    .productActions > a > svg{
+        width:2vmax;
+        height: 2vmax;
+    }
+
+
+
+}

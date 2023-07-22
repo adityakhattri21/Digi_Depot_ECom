@@ -1,0 +1,117 @@
+.processPage{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin-bottom: 11vmax;
+}
+
+.innerDivLeft > h2{
+    width:70%
+}
+
+.shippingInfo{
+     border-left:1px solid gray;
+     border-right: 1px solid gray;
+     height: 100%;
+     
+}
+
+.processShipping{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10vmax;
+    height: 100%;
+}
+
+.processForm{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.processForm > h1{
+    font:400 2vmax "Roboto";
+    color:gray
+}
+
+.processForm > div{
+    border-radius: 0;
+    width: 100%;
+    height: 80%;
+    padding: 0;    
+}
+
+.processForm > div >svg{
+    width:30%;
+    height: 30%;
+}
+
+.processForm > div>select{
+    border:1px solid rgba(0, 0, 0, 0.13);
+    width:60%;
+    text-align: center;
+}
+
+.delivered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.delivered > svg{
+    width: 40%;
+    height:40%;
+    color:forestgreen;
+}
+
+.delivered > h1 {
+    font: 400 2vmax 'Roboto';
+    color:tomato;
+}
+
+#updateOrderBtn{
+    background-color: tomato;
+    color: white;
+    width: 50%;
+    padding: 1vmax;
+}
+
+#updateOrderBtn:hover{
+    background-color: rgb(199, 69, 46);
+}
+.delivered>h2>span{
+    font:200 1vmax 'Roboto';
+    margin-right: 0.5vmax;
+}
+
+@media screen and (max-width:600px){
+    .processPage{
+        grid-template-columns: 1fr;
+    }
+
+    .shippingInfo{
+        border-top:1px solid gray;
+        border-bottom: 1px solid gray;
+   }
+
+   .processShipping{
+    margin:0;
+    padding: 5vmax;
+    height: 100%;
+   }
+
+   .processForm > h1{
+    margin-top: 1vmax;
+    font:400 3vmax "Roboto";
+}
+.delivered>h2>span{
+    font:200 2.5vmax 'Roboto';
+    
+}
+.delivered > h1 {
+    font: 400 4vmax 'Roboto';
+}
+}

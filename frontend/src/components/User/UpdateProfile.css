@@ -1,0 +1,147 @@
+.uprofileContainer{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: white;
+}
+
+.uprofileContainer > div{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    color:rgba(0,0,0,0.555);
+    font:500 2.2vmax "Roboto";
+    transform:  translateY(-10vmax);
+    text-align: center;
+    border-bottom: 1px solid rgba(40, 39, 39, 0.555);
+    width: 50%;
+}
+
+.uprofileContainer > div:first-child>img{
+    width: 20vmax;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.uprofileContainer > div:first-child > img:hover{
+    transform: scale(1.05);
+}
+
+.uprofileContainer > div:last-child {
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5vmax;
+    box-sizing: border-box;
+}
+
+form > div{
+    width: 100%;
+    padding:1vmax;
+    margin:2vmax;
+    border: 1px solid rgba(68, 67, 67, 0.555);
+    border-radius: 20px;
+}
+
+form > div > h4{
+    font: 500 1.5vmax "Roboto";
+    margin-bottom: 0.2vmax; 
+}
+
+.input{
+    text-align: center;
+    font : 400 1vmax cursive;
+}
+
+#registerImages > img {
+    width: 3vmax;
+    border-radius: 100%;
+  }
+  #registerImages > input {
+    display: flex;
+    padding: 0%;
+  }
+
+  #registerImages > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #registerImages > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+@media screen and (max-width:600px){
+    .uprofileContainer{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .heading{
+        font:500 3.2vmax "Roboto";
+        transform:  translateY(-2vmax);
+    }
+
+    .uprofileContainer > div:last-child {
+        text-align: center;
+        align-items: center;
+        padding: 1vmax;
+    }
+
+    form>div{
+        display: inline-block;
+        width: 80vw;
+        align-items: center;
+    }
+
+    #registerImages{
+        display: inline-block;
+        width: 80vw;
+        align-items: center;
+    }
+
+    #registerImages > img{
+        width: 10vmax;
+        display: inline;
+        align-self: center;
+    }
+
+    #registerImages > input{
+        max-width: 100%;
+    }
+
+    #registerImages > input::file-selector-button {
+        font: 400 1.8vmax cursive;
+      }
+
+
+    form > div > h4{
+        font: 500 3vmax "Roboto";
+        margin-bottom: 0.2vmax;
+    }
+
+    .input{
+        font : 400 1.5vmax cursive;
+    }
+
+    .button{
+        width: 80vw;
+    }
+}

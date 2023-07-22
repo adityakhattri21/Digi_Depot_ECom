@@ -1,0 +1,36 @@
+.mainTable
+{
+    padding:1vmax;
+    border-left: 1px solid gray;
+}
+
+.noOrders{
+    border-left: 1px solid gray;
+    width: 70vw;
+    padding-left: 20vmax;
+}
+
+
+
+@media  screen and  (max-width:600px){
+    .mainTable
+    {
+        padding:0;
+        border-top: 1px solid gray;
+    }
+
+    .mainTable > .table{
+        height: 40vh;
+        width: 100vw;
+    }
+
+    .mainTable>.table>table>tbody>tr>td{
+        font:300 1.3vmax 'Roboto';
+    }
+
+    .noOrders{
+        padding:0;
+        border-top:1px solid gray;
+        height: 30vh;
+        }
+}

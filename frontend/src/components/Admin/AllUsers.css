@@ -1,0 +1,41 @@
+.usersList{
+    border-left: 1px solid rgba(0, 0, 0, 0.13);
+    /* background-color: rgb(255, 255, 255); */
+    padding: 3rem 1rem;
+    margin-left: 2vmax;
+    height: 120vh;
+}
+.usersList> h1{
+    font:400 3vmax 'Roboto';
+    color:rgba(35, 33, 33,0.5);
+    padding: 1.5rem;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+@media screen and (max-width:600px) {
+    .usersList{
+        border-top: 1px solid rgba(0, 0, 0, 0.13);
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .usersList > .table{
+        height: 30vh;
+        width: 100vw;
+    }
+
+
+    .usersList > .table >table>thead>tr>th{
+        font:300 1.7vmax 'Roboto';
+    }
+
+    .usersList > .table >table>tbody>tr>td{
+        font: 300 1.3vmax 'Roboto';
+    }
+
+
+
+}

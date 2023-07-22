@@ -1,0 +1,225 @@
+.mainCart{
+  height: 100vh;
+}
+
+.cartMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vmax;
+}
+
+.cartMain > h1{
+    font: 500 2.5vmax "Roboto";
+    border-bottom: 1px solid gray;
+    width:20%;
+    text-align: center;
+}
+
+.cartHeader{
+    margin-top: 2vmax;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    width: 95vw;
+    height: 2vmax;
+    box-sizing: border-box;
+    background-color: tomato;
+    color:white;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 1vmax;
+}
+
+.cartHeader > p:last-child {
+    text-align: end;
+    padding-right: 1vmax;
+  }
+
+.cartContainer{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    width: 95vw;
+}
+
+.cartInput {
+    height: 4vmax;
+    display: flex;
+    align-items: center;
+    margin-top: 2vmax;
+    
+  }
+  
+  .cartInput > button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 0.5vmax;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 10px;
+  }
+  .cartInput > button:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+  }
+  
+  .cartInput > input {
+    border: none;
+    padding: 0.5vmax;
+    width: 1.5vmax;
+    text-align: center;
+    outline: none;
+    font: 900 0.8vmax "Roboto";
+    color: black;
+  }
+
+  .cartSubtotal{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5vmax;
+    font: 300 1vmax cursive;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+.cartGrossProfit{
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+}
+
+.cartGrossProfitBox{
+  border-top: 3px solid gray;
+  margin: 1vmax 2.5vmax;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font: 300 1vmax "Roboto";
+  padding:2vmax 0;
+}
+
+.checkOutButton{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkOutButton > button{
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 0.8vmax 4vmax;
+  width: 50%;
+  font:300 0.8vmax "Roboto";
+  margin: 1vmax 4vmax;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+.checkOutButton > button:hover{
+  background-color: rgb(142, 62, 48);
+}
+
+.emptyCart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.emptyHeading{
+  margin:1vmax;
+  font: 500 2.5vmax "Roboto";
+}
+
+.emptyIcon{
+  width: 5vmax;
+  height: 5vmax;
+  color: tomato;
+}
+
+.emptyCart > button {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 0.8vmax 4vmax;
+  width: 20%;
+  font:300 1vmax "Roboto";
+  margin: 1vmax 4vmax;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+.emptyCart > button:hover{
+  background-color: rgb(142, 62, 48);
+}
+
+@media screen and (max-width: 600px) {
+    .cartPage {
+      padding: 0;
+      min-height: 60vh;
+    }
+  
+    .cartHeader {
+      width: 100%;
+      font: 300 1.7vmax "Roboto";
+      grid-template-columns: 3fr 1fr 1fr;
+    }
+  
+    .cartContainer {
+      width: 100%;
+      grid-template-columns: 3fr 1fr 1fr;
+    }
+  
+    .cartInput {
+      height: 10vmax;
+      margin-top: 5vmax;
+    }
+  
+    .cartInput > button {
+      padding: 0.5vmax;
+    }
+  
+    .cartInput > input {
+      width: 3.5vmax;
+      font: 400 1.8vmax "Roboto";
+    }
+
+    .cartSubtotal{
+      font: 300 2vmax cursive;
+      justify-content: center;
+      align-items:center ;
+    }
+
+    .cartGrossProfit {
+      display: grid;
+      grid-template-columns: 0fr 2fr;
+    }
+  
+    .cartGrossProfitBox {
+      padding: 2vmax;
+      font: 300 2vmax "Roboto";
+    }
+  
+    .checkOutButton > button {
+      padding: 2vmax 4vmax;
+      width: 100%;
+      font: 300 2vmax "Roboto";
+    }
+
+    .emptyHeading{
+      font: 500 5vmax "Roboto";
+    }
+
+    .emptyIcon{
+      width: 7vmax;
+      height: 7vmax;
+    }
+
+    .emptyCart > button {
+      width: 50%;
+      font:300 2vmax "Roboto";
+    }
+  }
+

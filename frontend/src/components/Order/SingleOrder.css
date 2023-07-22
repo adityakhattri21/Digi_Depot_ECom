@@ -1,0 +1,196 @@
+.topDiv{
+    margin:5vmax;
+    margin-bottom: 2vmax;
+    padding: 3vmax;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+
+.topHeading{
+    margin-bottom: 4vmax;
+    font:500 3vmax 'Roboto';
+    color: tomato;
+}
+
+.topData{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.innerDivLeft{
+    padding-right: 1vmax;
+    border-right: 1px solid gray;
+}
+
+.innerDivLeft > h2{
+    margin-bottom: 1vmax;
+    border-bottom: 1px solid gray;
+    width: 25%;
+    font:400 1.5vmax "Roboto";
+    color:tomato;
+}
+
+.innerDivLeft > p > span{
+    margin-right: 1vmax;
+    font:400 1.3vmax 'Roboto';
+}
+
+.innerDivLeft > p{
+    font:400 1.2vmax 'Roboto';
+    text-align: left;
+}
+
+.innerDivMiddle{
+    padding: 0 2vmax;
+    border-right: 1px solid gray;
+}
+
+.innerDivMiddle > h2{
+    margin-bottom: 1vmax;
+    border-bottom: 1px solid gray;
+    font:400 1.5vmax "Roboto";
+    color:tomato;
+}
+
+.innerDivMiddle > p > span{
+    margin-right: 1vmax;
+    font:400 1.3vmax 'Roboto';
+}
+
+.innerDivMiddle > p{
+    font:400 1.2vmax 'Roboto';
+    text-align: left;
+    margin-top: 1.3vmax;
+}
+
+.innerDivRight{
+    padding: 0 2vmax;
+}
+
+.innerDivRight > h2{
+    margin-bottom: 1vmax;
+    border-bottom: 1px solid gray;
+    font:400 1.5vmax "Roboto";
+    color:tomato;
+}
+
+.innerDivRight > p > span{
+    margin-right: 1vmax;
+    font:400 1.3vmax 'Roboto';
+}
+
+.innerDivRight > p{
+    font:400 1.2vmax 'Roboto';
+    text-align: left;
+    margin-top: 1.3vmax;
+}
+
+.lowerDiv{
+    margin:0 3vmax;
+    padding: 0 3vmax;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.lowerHeading{
+    margin-bottom: 2vmax;
+    font:500 2vmax 'Roboto';
+    color: tomato;
+}
+
+.orderItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vmax;
+}
+
+.orderItem > img{
+    width: 5vmax;
+}
+
+.orderItem > a{
+    font:400 1vmax "Roboto";
+    align-self: center;
+    transition: all 0.5s;
+}
+
+.orderItem >a:hover{
+    color:tomato;
+}
+
+@media screen and (max-width:600px){
+    .topHeading{
+        margin-bottom: 2vmax;
+        font:500 2.4vmax 'Roboto';
+    }
+
+    .topData{
+        flex-direction: column;
+    }
+
+
+    .innerDivLeft,
+    .innerDivMiddle
+    {
+        border:none;
+        
+    }
+
+    .innerDivLeft >p{
+        font:300 1.7vmax 'Roboto';
+    }
+
+    .innerDivMiddle >p{
+        font:300 1.7vmax 'Roboto';
+    }
+
+    .innerDivRight >p{
+        font:300 1.7vmax 'Roboto';
+    }
+
+    .innerDivLeft >p>span{
+        font:300 1.7vmax 'Roboto';
+    }
+
+    .innerDivMiddle >p>span{
+        font:300 1.7vmax 'Roboto';
+    }
+
+    .innerDivRight >p>span{
+        font:300 1.7vmax 'Roboto';
+    }
+
+    .innerDivLeft > h2{
+        width: 40%;
+        font: 400 2vmax 'Roboto';
+    }
+    .innerDivMiddle > h2{
+        width: 40%;
+        font: 400 2vmax 'Roboto';
+    }
+
+    .innerDivRight > h2{
+        width: 40%;
+        font: 400 2vmax 'Roboto';
+    }
+
+    .innerDivMiddle,
+    .innerDivRight{
+        padding: 0;
+        margin-top: 2vmax;
+    }
+
+    .orderItem > a{
+        font:400 1.7vmax "Roboto";
+    }
+
+    .orderItem >span{
+        font:400 1.5vmax 'Roboto';
+    }
+}
+
+
+
